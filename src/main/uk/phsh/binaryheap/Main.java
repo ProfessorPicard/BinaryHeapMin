@@ -1,3 +1,5 @@
+package uk.phsh.binaryheap;
+
 import uk.phsh.binaryheap.collection.BinaryHeapMin;
 import uk.phsh.binaryheap.data.Ticket;
 
@@ -59,12 +61,12 @@ public class Main {
 
         binaryHeapMin.prettyString();
         System.out.println("Size: " + binaryHeapMin.size());
-        System.out.println("Minimum Node: " + binaryHeapMin.getMin());
+        System.out.println("Minimum Node: " + binaryHeapMin.getRoot());
         System.out.println("Contains Pete?: " + binaryHeapMin.contains(t2.getUniqueIdentifier()));
-        binaryHeapMin.removeMin();
+        binaryHeapMin.removeRoot();
         binaryHeapMin.prettyString();
         System.out.println("Size: " + binaryHeapMin.size());
-        System.out.println("Minimum Node: " + binaryHeapMin.getMin());
+        System.out.println("Minimum Node: " + binaryHeapMin.getRoot());
         System.out.println("Contains Pete?: " + binaryHeapMin.contains(t2.getUniqueIdentifier()));
     }
 

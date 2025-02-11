@@ -6,7 +6,7 @@ import uk.phsh.binaryheap.collection.BinaryHeapMin;
 import uk.phsh.binaryheap.data.Ticket;
 import static org.junit.Assert.*;
 
-public class TestBinaryHeap {
+public class TestBinaryHeapMin {
     BinaryHeapMin<Ticket> _ticketHeap;
     Ticket _ticket;
 
@@ -46,17 +46,17 @@ public class TestBinaryHeap {
     @Test
     public void testGetMin() {
         addTestItems();
-        assertEquals(0, _ticketHeap.getMin().getPriority());
+        assertEquals(0, _ticketHeap.getRoot().getPriority());
     }
 
     @Test
     public void testRemoveMin() {
         addTestItems();
-        assertNotNull(_ticketHeap.getMin());
-        assertEquals(0, _ticketHeap.getMin().getPriority());
+        assertNotNull(_ticketHeap.getRoot());
+        assertEquals(0, _ticketHeap.getRoot().getPriority());
         assertEquals(4, _ticketHeap.size());
-        _ticketHeap.removeMin();
-        assertEquals(1, _ticketHeap.getMin().getPriority());
+        _ticketHeap.removeRoot();
+        assertEquals(1, _ticketHeap.getRoot().getPriority());
         assertEquals(3, _ticketHeap.size());
     }
 
