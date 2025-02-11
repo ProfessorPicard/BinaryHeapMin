@@ -1,6 +1,6 @@
-package data;
+package uk.phsh.binaryheap.data;
 
-import interfaces.I_NodeElement;
+import uk.phsh.binaryheap.interfaces.I_NodeElement;
 
 public class Ticket implements I_NodeElement {
 
@@ -9,6 +9,8 @@ public class Ticket implements I_NodeElement {
         _currentId++;
         return _currentId;
     }
+
+    public static long getCurrentId() { return _currentId; }
 
     long uniqueId;
     String creatorName;
@@ -57,7 +59,7 @@ public class Ticket implements I_NodeElement {
     public String toString() {
         return "Ticket [uniqueId=" + uniqueId + ", creatorName=" + creatorName + ", ownerName=" +
                 ownerName + ", priority=" + priority + ", createdTimestamp=" +
-                createdTimestamp + ", solvedTimestamp=" + solvedTimestamp + ", solved=" + solved + "]";
+                createdTimestamp + ", description=" + description + ", solvedTimestamp=" + solvedTimestamp + ", solved=" + solved + "]";
     }
 
     @Override

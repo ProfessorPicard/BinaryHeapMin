@@ -1,6 +1,6 @@
-package data;
+package uk.phsh.binaryheap.data;
 
-import interfaces.I_Node;
+import uk.phsh.binaryheap.interfaces.I_Node;
 
 public class Node<E> implements I_Node<E> {
 

@@ -1,8 +1,8 @@
-package collection;
+package uk.phsh.binaryheap.collection;
 
-import data.Node;
-import interfaces.I_Binary;
-import interfaces.I_NodeElement;
+import uk.phsh.binaryheap.data.Node;
+import uk.phsh.binaryheap.interfaces.I_Binary;
+import uk.phsh.binaryheap.interfaces.I_NodeElement;
 
 public class BinaryHeapMin<E extends I_NodeElement> implements I_Binary<E>{
 
@@ -82,6 +82,11 @@ public class BinaryHeapMin<E extends I_NodeElement> implements I_Binary<E>{
             if(_currentSize > 0)
                 sortDown(_baseArray[0]);
         }
+    }
+
+    @Override
+    public void clear() {
+        resizeArray(0);
     }
 
     public void prettyString() {

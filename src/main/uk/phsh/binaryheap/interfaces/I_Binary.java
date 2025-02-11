@@ -1,4 +1,4 @@
-package interfaces;
+package uk.phsh.binaryheap.interfaces;
 
 public interface I_Binary<E> {
     boolean insert(E e, long key);
@@ -6,4 +6,5 @@ public interface I_Binary<E> {
     int size();
     E getMin();
     void removeMin();
+    void clear();
 }

@@ -1,10 +1,10 @@
-import collection.BinaryHeapMin;
-import data.Ticket;
+import uk.phsh.binaryheap.collection.BinaryHeapMin;
+import uk.phsh.binaryheap.data.Ticket;
 
 public class Main {
     public static void main(String[] args) {
         BinaryHeapMin<Ticket> binaryHeapMin = new BinaryHeapMin<>();
-        Ticket t1 = new Ticket(Ticket.getNewId(), "Chloe", (byte) 3, "Ticket 5");
+        Ticket t1 = new Ticket(Ticket.getNewId(), "Chloe", (byte) 3, "Chloe's Ticket");
         binaryHeapMin.insert(t1, t1.getPriority());
 
         try {
@@ -13,7 +13,7 @@ public class Main {
             throw new RuntimeException(e);
         }
 
-        Ticket t2 = new Ticket(Ticket.getNewId(), "Pete", (byte) 1, "Ticket 1");
+        Ticket t2 = new Ticket(Ticket.getNewId(), "Pete", (byte) 1, "Pete's Ticket");
         binaryHeapMin.insert(t2, t2.getPriority());
 
         try {
@@ -22,7 +22,7 @@ public class Main {
             throw new RuntimeException(e);
         }
 
-        Ticket t3 = new Ticket(Ticket.getNewId(), "Eli", (byte) 2, "Ticket 3");
+        Ticket t3 = new Ticket(Ticket.getNewId(), "Eli", (byte) 2, "Eli's Ticket");
         binaryHeapMin.insert(t3, t3.getPriority());
 
         try {
@@ -31,7 +31,7 @@ public class Main {
             throw new RuntimeException(e);
         }
 
-        Ticket t4 = new Ticket(Ticket.getNewId(), "Sophie", (byte) 1, "Ticket 2");
+        Ticket t4 = new Ticket(Ticket.getNewId(), "Sophie", (byte) 1, "Sophie's Ticket");
         binaryHeapMin.insert(t4, t4.getPriority());
 
         try {
@@ -40,7 +40,7 @@ public class Main {
             throw new RuntimeException(e);
         }
 
-        Ticket t5 = new Ticket(Ticket.getNewId(), "Aimee", (byte) 4, "Ticket 6");
+        Ticket t5 = new Ticket(Ticket.getNewId(), "Aimee", (byte) 4, "Aimee's Ticket");
         binaryHeapMin.insert(t5, t5.getPriority());
 
         try {
@@ -48,7 +48,7 @@ public class Main {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        Ticket t6 = new Ticket(Ticket.getNewId(), "Jay", (byte) 2, "Ticket 4");
+        Ticket t6 = new Ticket(Ticket.getNewId(), "Jay", (byte) 2, "Jay's Ticket");
         binaryHeapMin.insert(t6, t6.getPriority());
 
         try {

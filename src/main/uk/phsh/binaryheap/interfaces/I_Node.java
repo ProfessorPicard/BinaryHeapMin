@@ -1,4 +1,4 @@
-package interfaces;
+package uk.phsh.binaryheap.interfaces;
 
 public interface I_Node<E> {
     E getElement();
